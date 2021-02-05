@@ -20,17 +20,25 @@ h3{
   line-height: 2;
 
 }
+.profile{
+width: 50%;
+margin: 100px auto 50px auto;
+font-size:
+}
 .top{
   background-color: #ddf3f5;
   padding-top: 120px;
   position: relative;
 }
-.profilepic{
+/* .profilepic{
   margin-top: 20px;
   width: 150px;
   height: 200px;
   border-radius: 50%;
-}
+  position: sticky;
+
+
+} */
 body{
   margin: 0;
   text-align: center;
@@ -78,4 +86,22 @@ hr{
 }
 .end{
   margin-bottom: 0;
+}
+
+.btn:hover{
+  color: red;
+}
+btn:visited{
+  color: green;
+}
+.contact-me{
+  text-align: center;
+  align-items: center;
+}
+#links{
+
+  padding-bottom: 40px;
+}
+table{
+  margin: 0 auto;
 }
