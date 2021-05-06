@@ -28,16 +28,15 @@ margin: 100px auto 50px auto;
   background-color: #ddf3f5;
   padding-top: 120px;
   position: relative;
+  -webkit-animation:fade-in infinite alternate;
+  animation-name: example;
+  animation-duration: 8s;
 }
-/* .profilepic{
-  margin-top: 20px;
-  width: 150px;
-  height: 200px;
-  border-radius: 50%;
-  position: sticky;
+@keyframes example {
+  from {background-color:  #ddf3f5;}
+  to {background-color: #516e7a;}
+}
 
-
-} */
 body{
   margin: 0;
   text-align: center;
@@ -51,20 +50,50 @@ a{
   float: right;
   margin-left: 30px;
 }
+.comp:hover{
+  -webkit-animation:ease-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3s;
+}
 .codepic{
   width: 25%;
   float: left;
   margin-right: 30px;
 }
+.codepic:hover{
+  -webkit-animation:ease-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3s;
+}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
 .top_cloud{
   position: absolute;
   right: 300px;
   top: 50px;
+  -webkit-animation:fade-in infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 25s;
 }
+
+@-webkit-keyframes run {
+    0% { right: 0;}
+    50%{ right : 90%;}
+    100%{ right: 0;}
+}
+@-webkit-keyframes run2 {
+    0% { left:  0;}
+    50%{ left:  90%;}
+    100%{ left:  0;}
+}
+
 .bottom_cloud{
   position: absolute;
   left: 300px;
   bottom: 300px;
+  -webkit-animation:fade-out infinite alternate;
+  -webkit-animation-name: run2;
+  -webkit-animation-duration: 25s;
 }
 hr{
   border-style: dotted none none;
@@ -73,6 +102,7 @@ hr{
   border-width: 5px;
 }
 .middle-container{
+
 }
 .bottom-container{
   margin-bottom: 0;
@@ -101,4 +131,10 @@ btn:visited{
 }
 table{
   margin: 0 auto;
+}
+.ex-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
 }
